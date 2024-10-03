@@ -1236,13 +1236,13 @@ hr {
 }
 #search_input_box {
     position: fixed;
-    left: 50%;
+    left: 85%;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
-    width: 100%;
+    width: 30%;
     max-width: 1296px;
     z-index: 999;
     text-align: center;
@@ -1251,6 +1251,9 @@ hr {
 }
 #search_input_box ::placeholder {
     color: #fff;
+}
+#search-results{
+    background: #ffeaef; 
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
     #search_input_box {

@@ -20,3 +20,4 @@
 <link rel="stylesheet" href="{{asset('front/assets/css/slick.css')}}" />
 <link rel="stylesheet" href="{{asset('front/assets/css/nice-select.css')}}" />
 <link rel="stylesheet" href="{{asset('front/assets/css/style.css')}}" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

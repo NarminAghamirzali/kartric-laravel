@@ -12,6 +12,7 @@ use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\TeamController;
 use App\Http\Controllers\FrontController;
+use App\Http\Controllers\SearchController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
@@ -51,4 +52,6 @@ Route::prefix(LaravelLocalization::setLocale().'/')->middleware(['localeSessionR
     Route::get('/products', [FrontController::class, 'products'])->name('products.index');
     Route::get("/products/{category}", [FrontController::class, 'showCategory'])->name('products.show');
     Route::get('/product/{product}', [FrontController::class, 'showProduct'])->name('product.show');
+
+    Route::get('/api/search', [SearchController::class, 'search']);
 });
